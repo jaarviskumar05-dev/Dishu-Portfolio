@@ -1,0 +1,70 @@
+{
+  "name": "modern-portfolio",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tsparticles/engine": "^4.4.0",
+    "@tsparticles/react": "^4.4.0",
+    "framer-motion": "^14.7.1",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-countup": "^6.4.2",
+    "react-dom": "19.3.1",
+    "react-google-recaptcha-v3": "^1.11.0",
+    "react-hot-toast": "^2.6.1",
+    "react-icons": "^5.7.0",
+    "resend": "^6.37.0",
+    "swiper": "^14.4.0",
+    "tsparticles": "^4.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  },
+  "author": {
+    "name": "Dishu Kumar",
+    "email": "dishusingh05@gmail.com",
+    "url": "https://github.com/Jaarvis05/Jaarvis05"
+  },
+  "description": "Dishu Kumar is a Full-Stack MERN Developer based in Gurugram, Haryana.",
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "typescript",
+    "html",
+    "css",
+    "tailwindcss",
+    "modern-ui",
+    "modern-ux",
+    "portfolio",
+    "framer-motion",
+    "react-hot-toast",
+    "resend",
+    "3d-website",
+    "particle-effect"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jaarvis05/Jaarvis05.git"
+  },
+  "homepage": "https://github.com/Jaarvis05/Jaarvis05#readme",
+  "bugs": {
+    "url": "https://github.com/Jaarvis05/Jaarvis05/issues",
+    "email": "dishusingh05@gmail.com"
+  }
+}

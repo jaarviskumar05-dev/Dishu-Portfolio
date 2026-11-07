@@ -1,0 +1,82 @@
+import type { Metadata } from "next";
+import { Sora } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+
+import Header from "@/components/Header";
+import Nav from "@/components/Nav";
+import TopLeftImg from "@/components/TopLeftImg";
+
+import "./globals.css";
+
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora-family",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
+
+export const metadata: Metadata = {
+  title: "Dishu Kumar | MERN Stack Developer | Portfolio",
+  description:
+    "Dishu Kumar is a Full-Stack MERN Developer based in Gurugram, Haryana. Experienced in React, Next.js, Node.js, Express, MongoDB, and AI-powered workflows.",
+  keywords: [
+    "Dishu Kumar",
+    "MERN Stack Developer",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Tailwind CSS",
+    "Python",
+    "JavaScript",
+    "Gurugram",
+    "Portfolio",
+  ],
+  authors: [
+    {
+      name: "Dishu Kumar",
+      url: "https://github.com/Jaarvis05/Jaarvis05",
+    },
+  ],
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
+  other: {
+    "theme-color": "#f13024",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="h-full">
+      <body
+        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
+      >
+        <TopLeftImg />
+        <Nav />
+        <Header />
+        {children}
+        <aside>
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              style: {
+                background: "#393a47",
+                color: "#fff",
+                border: "1px solid rgba(255, 255, 255, 0.2)",
+              },
+            }}
+          />
+        </aside>
+      </body>
+    </html>
+  );
+}

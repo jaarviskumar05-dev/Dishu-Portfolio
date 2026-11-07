@@ -1,0 +1,42 @@
+import Link from "next/link";
+
+import Socials from "@/components/Socials";
+
+const Header = () => {
+  return (
+    <header className="absolute z-30 w-full items-center px-16 xl:px-0 xl:h-22.5">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
+          <Link
+            prefetch
+            href="/"
+            className="flex items-center gap-x-3 text-2xl xl:text-3xl font-bold tracking-tight text-white group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              className="w-9 h-9 xl:w-11 xl:h-11 text-accent fill-current transition-transform duration-300 group-hover:rotate-6 shrink-0"
+              fillRule="nonzero"
+              aria-hidden="true"
+            >
+              <g transform="scale(5.12,5.12)">
+                <path d="M25,2c-12.6907,0 -23,10.3093 -23,23c0,12.69071 10.3093,23 23,23c12.69071,0 23,-10.30929 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60982,0 21,9.39018 21,21c0,11.60982 -9.39018,21 -21,21c-11.60982,0 -21,-9.39018 -21,-21c0,-11.60982 9.39018,-21 21,-21zM25,7c-9.941,0 -18,8.059 -18,18c0,9.941 8.059,18 18,18c9.941,0 18,-8.059 18,-18c0,-9.941 -8.059,-18 -18,-18zM26.00781,13h2.78711l-0.68555,2h1.05469l0.68555,-2h2.88086l-0.80273,2.45313c3.556,0.338 8.99302,2.04295 4.16602,10.62695c-2.687,4.779 -7.17045,6.97055 -11.31445,7.93555l-0.75,1.98438h-2.78711l0.66797,-2h-1.05469l-0.66797,2h-2.88086l0.44336,-1.03125h-0.00586l0.39258,-0.95312l-2.93359,-0.00977l5.26758,-13.00586h5.27344l-3.49414,9.5957c0,0 3.78933,0.1638 6.98633,-3.0332c3.105,-3.104 4.38561,-8.5625 -0.52539,-8.5625h-13.71094l2.07617,-4h8.16016z" />
+              </g>
+            </svg>
+            <span>
+              Dishu{" "}
+              <span className="font-light text-white/75 group-hover:text-white transition-colors">
+                Kumar
+              </span>
+              {/* <span className="text-accent">.</span> */}
+            </span>
+          </Link>
+
+          <Socials />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

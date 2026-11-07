@@ -41,9 +41,13 @@ export const metadata: Metadata = {
     },
   ],
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+      { url: "/logo.svg?v=2", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: "/logo.svg?v=2",
   },
   other: {
     "theme-color": "#f13024",
@@ -57,6 +61,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+        <link rel="icon" href="/icon.svg?v=2" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/logo.svg?v=2" />
+      </head>
       <body
         className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
       >

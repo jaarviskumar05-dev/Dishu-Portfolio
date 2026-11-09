@@ -100,7 +100,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="tel:+917011593308"
+                href="tel:+918586871783"
                 className="flex items-center gap-x-4 bg-white/5 border border-white/10 hover:border-accent/60 hover:bg-white/10 px-4 py-3 rounded-xl transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-110 transition-transform shrink-0">
@@ -111,7 +111,7 @@ const Contact = () => {
                     Call / WhatsApp
                   </span>
                   <span className="text-sm text-white group-hover:text-accent transition-colors font-medium">
-                    +91 7011593308
+                    +91 8586871783
                   </span>
                 </div>
               </a>
@@ -158,7 +158,7 @@ const Contact = () => {
                 <RiMailLine />
               </a>
               <a
-                href="tel:+917011593308"
+                href="tel:+918586871783"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/80 hover:text-white hover:bg-accent hover:border-accent transition-all duration-300"
                 title="Call"
               >

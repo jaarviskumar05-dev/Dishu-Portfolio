@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
+import { HiUser } from "react-icons/hi2";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -48,13 +48,10 @@ const TestimonialSlider = () => {
           <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
             <div className="w-full max-w-75 flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
-                <div className="mb-2 mx-auto">
-                  <Image
-                    src={person.image}
-                    width={100}
-                    height={100}
-                    alt={person.name}
-                  />
+                <div className="mb-3 mx-auto">
+                  <div className="w-20 h-20 xl:w-24 xl:h-24 rounded-full bg-accent/10 border-2 border-accent/40 flex items-center justify-center text-accent shadow-[0_0_20px_rgba(241,48,36,0.25)] mx-auto transition-transform hover:scale-105">
+                    <HiUser className="text-4xl xl:text-5xl text-accent" />
+                  </div>
                 </div>
 
                 <div className="text-lg font-semibold">{person.name}</div>

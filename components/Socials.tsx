@@ -11,7 +11,7 @@ import {
 export const socialData: { name: string; link: string; Icon: IconType }[] = [
   {
     name: "GitHub",
-    link: "https://github.com/Jaarvis05/Jaarvis05",
+    link: "https://github.com/jaarviskumar05-dev",
     Icon: RiGithubLine,
   },
   {

@@ -33,7 +33,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 2,
     w_name: "Myntra-clone",
-    w_img: "/projects/work-img1.png",
+    w_img: "/projects/myntra.png",
     w_badge: "E-Commerce",
     w_descrip:
       "I created a Myntra clone using HTML, CSS, JavaScript, implementing e-commerce features like product listings and checkout.",
@@ -43,7 +43,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 3,
     w_name: "NewsFeed App",
-    w_img: "/projects/work-img2.png",
+    w_img: "/projects/news.png",
     w_badge: "React Web App",
     w_descrip:
       "I developed a newsfeed app using React, focusing on dynamic content rendering and real-time updates for user interactions.",
@@ -53,7 +53,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 4,
     w_name: "TextUtils App",
-    w_img: "/projects/work-img3.png",
+    w_img: "/projects/textutils.png",
     w_badge: "Utility Tool",
     w_descrip:
       "I developed a TextUtils app using React, providing text manipulation features like word count, case conversion, and trimming.",
@@ -63,7 +63,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 5,
     w_name: "To-do-list",
-    w_img: "/projects/work-img4.png",
+    w_img: "/projects/to-do.png",
     w_badge: "Productivity",
     w_descrip:
       "I developed a To-Do List app using HTML, CSS, and JavaScript, enabling users to add, edit, and delete tasks.",
@@ -73,7 +73,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 6,
     w_name: "Weather App",
-    w_img: "/projects/work-img5.png",
+    w_img: "/projects/weather.png",
     w_badge: "Live API",
     w_descrip:
       "I developed a Weather app using HTML, CSS, and JavaScript, providing real-time weather updates based on user location.",
@@ -83,7 +83,7 @@ export const Mywork_data: ProjectItem[] = [
   {
     w_no: 7,
     w_name: "Form",
-    w_img: "/projects/work-img6.jpg",
+    w_img: "/projects/form.jpg",
     w_badge: "Validation",
     w_descrip:
       "I developed a form using HTML, CSS, and JavaScript, allowing users to submit data with validation.",
@@ -135,9 +135,9 @@ const WorkSlider = () => {
             key={project.w_no}
             className="w-[70vw] sm:w-[38vw] md:w-[30vw] xl:w-[17vw] max-w-[285px] shrink-0"
           >
-            <div className="bg-[#131424]/90 backdrop-blur-md border border-white/10 hover:border-accent/60 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col h-[60vh] min-h-[440px] max-h-[530px] group">
+            <div className="bg-[#131424]/90 backdrop-blur-md border border-white/10 hover:border-accent/60 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col h-[52vh] min-h-[380px] max-h-[455px] group">
               {/* Project Image Preview */}
-              <div className="relative w-full h-[27vh] min-h-[190px] max-h-[235px] overflow-hidden bg-black/40">
+              <div className="relative w-full h-[25vh] min-h-[180px] max-h-[215px] overflow-hidden bg-black/40">
                 <Image
                   src={project.w_img}
                   alt={project.w_name}
@@ -147,28 +147,28 @@ const WorkSlider = () => {
                 />
 
                 {/* Index badge */}
-                <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-white/15 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold text-accent tracking-wider shadow-sm z-10">
+                <div className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-md border border-white/15 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold text-accent tracking-wider shadow-sm z-10">
                   #{String(project.w_no).padStart(2, "0")}
                 </div>
 
                 {/* Category badge */}
                 {project.w_badge && (
-                  <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md border border-white/15 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-medium text-white/90 tracking-wider shadow-sm z-10">
+                  <div className="absolute top-2.5 right-2.5 bg-black/70 backdrop-blur-md border border-white/15 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-medium text-white/90 tracking-wider shadow-sm z-10">
                     {project.w_badge}
                   </div>
                 )}
               </div>
 
               {/* Project Details */}
-              <div className="p-3.5 sm:p-4.5 flex flex-col justify-between flex-1">
-                <div>
+              <div className="p-3 sm:p-3.5 flex flex-col justify-between flex-1">
+                <div className="space-y-1.5">
                   {/* Title */}
-                  <h3 className="text-sm sm:text-base xl:text-lg font-bold text-white group-hover:text-accent transition-colors mb-2">
+                  <h3 className="text-sm sm:text-base font-bold text-white group-hover:text-accent transition-colors line-clamp-1">
                     {project.w_name}
                   </h3>
 
-                  {/* Description - full text without ... truncation */}
-                  <p className="text-xs xl:text-[13px] text-white/75 leading-relaxed">
+                  {/* Description - utilizes available space and truncates with ellipsis only if text overflows */}
+                  <p className="text-xs xl:text-[13px] text-white/80 leading-relaxed line-clamp-4">
                     {project.w_descrip}
                   </p>
                 </div>
@@ -179,13 +179,13 @@ const WorkSlider = () => {
                     href={project.w_link}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center justify-center gap-x-2.5 text-xs sm:text-sm font-semibold text-white/85 hover:text-white transition-colors group/link py-1"
+                    className="inline-flex items-center justify-center gap-x-2 text-xs sm:text-sm font-semibold text-white/85 hover:text-white transition-colors group/link py-1"
                   >
                     <span className="group-hover/link:underline underline-offset-4">
                       View Project
                     </span>
-                    <span className="w-7 h-7 rounded-full bg-white/10 group-hover/link:bg-accent flex items-center justify-center text-white transition-all duration-300 shadow-sm">
-                      <BsArrowRight className="text-xs transition-transform duration-300 group-hover/link:-rotate-45" />
+                    <span className="w-6 h-6 rounded-full bg-white/10 group-hover/link:bg-accent flex items-center justify-center text-white transition-all duration-300 shadow-sm">
+                      <BsArrowRight className="text-[11px] transition-transform duration-300 group-hover/link:-rotate-45" />
                     </span>
                   </a>
                 </div>

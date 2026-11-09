@@ -14,7 +14,7 @@ export default function Template({
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div key={pathname} className="h-full">
+      <motion.div key={pathname} className="w-full h-full">
         <Transition />
         {children}
       </motion.div>

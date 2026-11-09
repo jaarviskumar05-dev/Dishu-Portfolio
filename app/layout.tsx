@@ -68,7 +68,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/logo.svg?v=2" />
       </head>
       <body
-        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-no-repeat relative`}
+        className={`${sora.variable} font-sora page bg-site text-white bg-cover bg-fixed bg-no-repeat relative bg-primary min-h-screen`}
       >
         <TopLeftImg />
         <Nav />

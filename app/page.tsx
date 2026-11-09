@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="w-full bg-primary/60 h-full overflow-hidden relative">
       <div className="w-full h-full bg-linear-to-r from-primary/10 via-black/30 to-black/10 flex flex-col justify-center relative z-10">
-        <div className="text-center flex flex-col justify-center pt-20 pb-24 sm:pt-22 sm:pb-26 md:pt-28 md:pb-32 xl:pt-40 xl:pb-0 xl:text-left h-full container mx-auto px-4 sm:px-6 xl:px-0">
+        <div className="text-center flex flex-col justify-center pt-20 pb-24 sm:pt-22 sm:pb-26 md:pt-28 md:pb-32 xl:pt-40 xl:pb-0 xl:text-left h-full container mx-auto px-4 sm:px-6 xl:px-4">
           <motion.div
             variants={fadeIn("down", 0.1)}
             initial="hidden"

@@ -146,11 +146,11 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="w-full h-full bg-primary/30 pt-16 pb-28 sm:pt-20 sm:pb-32 xl:pt-44 xl:pb-32 text-center xl:text-left overflow-y-auto overflow-x-hidden relative">
+    <div className="w-full h-full bg-primary/30 pt-24 pb-24 sm:pt-28 sm:pb-44 xl:pt-44 xl:pb-32 text-center xl:text-left overflow-y-auto overflow-x-hidden relative">
       <Circles />
 
-      <div className="container mx-auto h-full min-h-full flex flex-col xl:flex-row items-center justify-start xl:justify-center gap-y-8 xl:gap-x-6 w-full px-4 sm:px-6 xl:px-0">
-        <div className="w-full xl:flex-1 flex flex-col items-center xl:items-start justify-center text-center xl:text-left">
+      <div className="container mx-auto h-auto min-h-full xl:h-full flex flex-col xl:flex-row items-center justify-start xl:justify-center gap-y-8 xl:gap-x-6 w-full px-4 sm:px-6 xl:pl-4 xl:pr-20">
+        <div className="w-full xl:flex-1 flex flex-col items-center xl:items-start justify-start xl:justify-center text-center xl:text-left">
           <motion.h2
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -241,7 +241,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] min-h-60 xl:min-h-100 pb-8 xl:pb-0 items-center xl:items-start text-center xl:text-left justify-center"
+          className="flex flex-col w-full xl:max-w-[48%] min-h-60 xl:min-h-100 pb-4 xl:pb-0 items-center xl:items-start text-center xl:text-left justify-start xl:justify-center"
         >
           <div className="flex gap-x-3 sm:gap-x-4 xl:gap-x-6 mx-auto xl:mx-0 mb-4 sm:mb-6 xl:mb-6 flex-wrap justify-center xl:justify-start gap-y-2 text-xs sm:text-sm xl:text-base w-full xl:w-auto">
             {aboutData.map((item, itemI) => (
@@ -261,12 +261,12 @@ const About = () => {
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex flex-col sm:flex-row max-w-full gap-x-2 items-center xl:items-start text-center xl:text-left text-white/70 justify-center xl:justify-start"
+                className="flex flex-col sm:flex-row flex-wrap max-w-full gap-x-2 items-center xl:items-start text-center xl:text-left text-white/70 justify-center xl:justify-start"
               >
                 <div className="font-normal text-white/90 text-sm md:text-base">{item.title}</div>
                 {item.stage && <div className="hidden md:flex text-white/30">-</div>}
                 {item.stage && (
-                  <div className="text-accent text-xs md:text-sm font-light mt-0.5">
+                  <div className="text-accent text-xs md:text-sm font-light mt-0.5 shrink-0">
                     {item.stage}
                   </div>
                 )}

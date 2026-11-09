@@ -224,13 +224,15 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="btn rounded-full border border-white/50 w-full sm:w-auto h-11 sm:h-13 px-6 sm:px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent hover:bg-accent text-white group disabled:opacity-60 disabled:cursor-not-allowed shadow-lg cursor-pointer"
+                className="btn rounded-full border border-white/50 w-full sm:w-auto h-11 sm:h-13 px-6 sm:px-8 transition-all duration-300 flex items-center justify-center gap-x-3 overflow-hidden text-white group disabled:opacity-60 disabled:cursor-not-allowed shadow-lg cursor-pointer"
               >
                 <span className="text-xs sm:text-sm font-semibold tracking-wide">
                   {isLoading ? "Sending..." : "Submit now"}
                 </span>
                 {!isLoading && (
-                  <BsArrowRight className="ml-2 text-base sm:text-lg group-hover:translate-x-1 transition-transform" />
+                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/10 group-hover:bg-[#FFFFFF] flex items-center justify-center text-white group-hover:text-primary transition-all duration-300 shadow-sm">
+                    <BsArrowRight className="text-xs sm:text-sm transition-transform duration-300 group-hover:-rotate-45" />
+                  </span>
                 )}
               </button>
 

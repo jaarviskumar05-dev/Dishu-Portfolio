@@ -9,11 +9,11 @@ import { fadeIn } from "@/variants";
 
 const Services = () => {
   return (
-    <div className="w-full h-full bg-primary/30 pt-20 pb-24 sm:pt-24 sm:pb-28 xl:py-36 flex items-start xl:items-center justify-start xl:justify-center overflow-y-auto xl:overflow-hidden overflow-x-hidden relative">
+    <div className="w-full h-full bg-primary/30 pt-20 pb-24 sm:pt-24 sm:pb-28 xl:py-36 flex flex-col justify-center xl:items-center xl:justify-center overflow-y-auto xl:overflow-hidden overflow-x-hidden relative">
       <Circles />
-      <div className="container mx-auto w-full">
-        <div className="flex flex-col xl:flex-row gap-x-8">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-3 xl:mb-0">
+      <div className="container mx-auto w-full px-4 sm:px-6 xl:px-4">
+        <div className="flex flex-col xl:flex-row gap-x-8 items-center justify-center">
+          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-3 sm:mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -28,7 +28,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-3 xl:mb-4 max-w-md xl:max-w-100 mx-auto lg:mx-0 text-white/80 text-xs sm:text-sm xl:text-base leading-relaxed px-2 xl:px-0"
+              className="mb-2 xl:mb-2 max-w-md xl:max-w-100 mx-auto lg:mx-0 text-white/80 text-xs sm:text-sm xl:text-base leading-relaxed px-2 xl:px-0"
             >
               Building robust full-stack web applications with the MERN stack,
               high-performance user interfaces, reliable RESTful APIs, and

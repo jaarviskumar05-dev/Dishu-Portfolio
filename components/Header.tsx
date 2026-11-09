@@ -4,9 +4,9 @@ import Socials from "@/components/Socials";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 z-30 w-full flex items-center px-4 sm:px-8 xl:px-0 h-16 sm:h-20 xl:h-22.5 pointer-events-auto">
+    <header className="fixed top-0 left-0 z-40 w-full flex items-center px-4 sm:px-8 xl:px-0 h-16 sm:h-20 xl:h-22.5 bg-primary/90 backdrop-blur-md border-b border-white/10 xl:bg-transparent xl:backdrop-blur-none xl:border-none transition-all duration-300 pointer-events-auto">
       <div className="container mx-auto w-full">
-        <div className="flex flex-row justify-between items-center py-2 sm:py-4 xl:py-0 w-full">
+        <div className="flex flex-row justify-between items-center py-2 sm:py-4 xl:py-0 w-full flex-nowrap">
           <Link
             prefetch
             href="/"

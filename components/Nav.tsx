@@ -33,8 +33,8 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-20 xl:h-max py-8 bg-white/10 backdrop-blur-xs text-3xl xl:text-xl xl:rounded-full">
+    <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed bottom-0 left-0 w-full xl:w-16 xl:max-w-md xl:h-screen xl:top-0 xl:bottom-0 xl:right-[2%] xl:left-auto z-50 pointer-events-none pb-3 sm:pb-4 xl:pb-0">
+      <div className="flex w-[92%] sm:w-[85%] max-w-md xl:w-full xl:max-w-none xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-6 sm:px-10 xl:px-0 h-16 xl:h-max py-3 xl:py-8 bg-primary/95 xl:bg-white/10 backdrop-blur-xl xl:backdrop-blur-xs text-2xl xl:text-xl rounded-full border border-white/15 xl:border-none shadow-[0_10px_35px_rgba(0,0,0,0.8)] pointer-events-auto">
         {navData.map((link, i) => (
           <Link
             prefetch

@@ -4,18 +4,18 @@ import Socials from "@/components/Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full items-center px-16 xl:px-0 xl:h-22.5">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
+    <header className="fixed top-0 left-0 z-40 w-full flex items-center px-4 sm:px-8 xl:px-0 h-16 sm:h-20 xl:h-22.5 bg-primary/90 backdrop-blur-md border-b border-white/10 xl:bg-transparent xl:backdrop-blur-none xl:border-none transition-all duration-300 pointer-events-auto">
+      <div className="container mx-auto w-full">
+        <div className="flex flex-row justify-between items-center py-2 sm:py-4 xl:py-0 w-full flex-nowrap">
           <Link
             prefetch
             href="/"
-            className="flex items-center gap-x-3 text-2xl xl:text-3xl font-bold tracking-tight text-white group"
+            className="flex items-center gap-x-2 sm:gap-x-3 text-lg sm:text-2xl xl:text-3xl font-bold tracking-tight text-white group shrink-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"
-              className="w-10 h-10 xl:w-12 xl:h-12 text-white fill-current drop-shadow-[0_0_10px_rgba(255,255,255,0.4)] transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(241,48,36,0.8)] shrink-0"
+              className="w-8 h-8 sm:w-10 sm:h-10 xl:w-12 xl:h-12 text-white fill-current drop-shadow-[0_0_10px_rgba(255,255,255,0.4)] transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(241,48,36,0.8)] shrink-0"
               fillRule="nonzero"
               aria-hidden="true"
             >

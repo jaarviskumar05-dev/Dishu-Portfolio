@@ -128,16 +128,16 @@ const WorkSlider = () => {
           dynamicBullets: true,
         }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="w-full py-6 sm:py-8"
+        className="w-full py-3 sm:py-6 xl:py-8"
       >
         {Mywork_data.map((project) => (
           <SwiperSlide
             key={project.w_no}
-            className="w-[70vw] sm:w-[38vw] md:w-[30vw] xl:w-[17vw] max-w-[285px] shrink-0"
+            className="w-[72vw] sm:w-[38vw] md:w-[30vw] xl:w-[17vw] max-w-[285px] shrink-0"
           >
-            <div className="bg-[#131424]/90 backdrop-blur-md border border-white/10 hover:border-accent/60 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col h-[52vh] min-h-[380px] max-h-[455px] group">
+            <div className="bg-[#131424]/90 backdrop-blur-md border border-white/10 hover:border-accent/60 rounded-2xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col h-[44vh] sm:h-[48vh] xl:h-[52vh] min-h-[330px] sm:min-h-[380px] max-h-[420px] xl:max-h-[455px] group">
               {/* Project Image Preview */}
-              <div className="relative w-full h-[25vh] min-h-[180px] max-h-[215px] overflow-hidden bg-black/40">
+              <div className="relative w-full h-[19vh] sm:h-[23vh] xl:h-[25vh] min-h-[140px] sm:min-h-[180px] max-h-[185px] xl:max-h-[215px] overflow-hidden bg-black/40">
                 <Image
                   src={project.w_img}
                   alt={project.w_name}
@@ -168,7 +168,7 @@ const WorkSlider = () => {
                   </h3>
 
                   {/* Description - utilizes available space and truncates with ellipsis only if text overflows */}
-                  <p className="text-xs xl:text-[13px] text-white/80 leading-relaxed line-clamp-4">
+                  <p className="text-[11px] sm:text-xs xl:text-[13px] text-white/80 leading-relaxed line-clamp-3 sm:line-clamp-4">
                     {project.w_descrip}
                   </p>
                 </div>

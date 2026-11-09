@@ -60,10 +60,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-primary/30 pt-28 pb-16 xl:pt-36 xl:pb-20 overflow-y-auto">
+    <div className="w-full h-full bg-primary/30 pt-20 pb-24 sm:pt-24 sm:pb-28 xl:pt-36 xl:pb-20 overflow-y-auto overflow-x-hidden relative">
       <Circles />
-      <div className="container mx-auto min-h-full flex items-center justify-center">
-        <div className="flex flex-col xl:flex-row gap-10 xl:gap-16 w-full max-w-5xl items-start justify-between">
+      <div className="container mx-auto w-full min-h-full flex flex-col justify-start xl:justify-center items-center py-4 xl:py-0">
+        <div className="flex flex-col xl:flex-row gap-6 sm:gap-8 xl:gap-16 w-full max-w-5xl items-start justify-between">
           {/* Left Column: Contact info & Let's talk */}
           <motion.div
             variants={fadeIn("right", 0.2)}
@@ -72,28 +72,28 @@ const Contact = () => {
             exit="hidden"
             className="flex-1 flex flex-col w-full text-center xl:text-left"
           >
-            <h2 className="h2 mb-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold xl:font-semibold leading-tight mb-2 xl:mb-3">
               Let&apos;s <span className="text-accent">talk.</span>
             </h2>
-            <p className="text-white/80 text-sm xl:text-base leading-relaxed mb-8 max-w-md mx-auto xl:mx-0">
+            <p className="text-white/80 text-xs sm:text-sm xl:text-base leading-relaxed mb-4 sm:mb-6 xl:mb-8 max-w-md mx-auto xl:mx-0 px-2 xl:px-0">
               I&apos;m currently available to take on new projects, so feel free
               to send me a message about anything that you want me to work on.
               You can contact me anytime.
             </p>
 
-            <div className="flex flex-col gap-y-3.5 mb-8 w-full max-w-md mx-auto xl:mx-0">
+            <div className="grid grid-cols-1 sm:grid-cols-3 xl:flex xl:flex-col gap-2.5 sm:gap-3 xl:gap-y-3.5 mb-4 sm:mb-6 xl:mb-8 w-full max-w-md sm:max-w-none xl:max-w-md mx-auto xl:mx-0">
               <a
                 href="mailto:jaarviskumar05@gmail.com"
-                className="flex items-center gap-x-4 bg-white/5 border border-white/10 hover:border-accent/60 hover:bg-white/10 px-4 py-3 rounded-xl transition-all duration-300 group"
+                className="flex items-center gap-x-3 sm:gap-x-4 bg-white/5 border border-white/10 hover:border-accent/60 hover:bg-white/10 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl transition-all duration-300 group text-left"
               >
-                <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-110 transition-transform shrink-0">
-                  <RiMailLine className="text-xl" />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-110 transition-transform shrink-0">
+                  <RiMailLine className="text-lg sm:text-xl" />
                 </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-[11px] uppercase tracking-wider text-white/50 font-medium">
+                <div className="flex flex-col min-w-0">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/50 font-medium">
                     Email
                   </span>
-                  <span className="text-sm text-white group-hover:text-accent transition-colors font-medium break-all">
+                  <span className="text-xs sm:text-sm text-white group-hover:text-accent transition-colors font-medium truncate sm:break-all">
                     jaarviskumar05@gmail.com
                   </span>
                 </div>
@@ -101,37 +101,37 @@ const Contact = () => {
 
               <a
                 href="tel:+918586871783"
-                className="flex items-center gap-x-4 bg-white/5 border border-white/10 hover:border-accent/60 hover:bg-white/10 px-4 py-3 rounded-xl transition-all duration-300 group"
+                className="flex items-center gap-x-3 sm:gap-x-4 bg-white/5 border border-white/10 hover:border-accent/60 hover:bg-white/10 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl transition-all duration-300 group text-left"
               >
-                <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-110 transition-transform shrink-0">
-                  <RiPhoneLine className="text-xl" />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-110 transition-transform shrink-0">
+                  <RiPhoneLine className="text-lg sm:text-xl" />
                 </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-[11px] uppercase tracking-wider text-white/50 font-medium">
+                <div className="flex flex-col min-w-0">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/50 font-medium">
                     Call / WhatsApp
                   </span>
-                  <span className="text-sm text-white group-hover:text-accent transition-colors font-medium">
+                  <span className="text-xs sm:text-sm text-white group-hover:text-accent transition-colors font-medium">
                     +91 8586871783
                   </span>
                 </div>
               </a>
 
-              <div className="flex items-center gap-x-4 bg-white/5 border border-white/10 px-4 py-3 rounded-xl">
-                <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent shrink-0">
-                  <RiMapPinLine className="text-xl" />
+              <div className="flex items-center gap-x-3 sm:gap-x-4 bg-white/5 border border-white/10 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-left">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent shrink-0">
+                  <RiMapPinLine className="text-lg sm:text-xl" />
                 </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-[11px] uppercase tracking-wider text-white/50 font-medium">
+                <div className="flex flex-col min-w-0">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/50 font-medium">
                     Location
                   </span>
-                  <span className="text-sm text-white font-medium">
+                  <span className="text-xs sm:text-sm text-white font-medium">
                     Gurugram, Haryana
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="flex items-center justify-center xl:justify-start gap-x-3 text-lg">
+            <div className="hidden xl:flex items-center justify-start gap-x-3 text-lg">
               <a
                 href="https://github.com/jaarviskumar05-dev"
                 target="_blank"
@@ -174,61 +174,65 @@ const Contact = () => {
             animate="show"
             exit="hidden"
             onSubmit={onSubmit}
-            className="flex-1 flex flex-col gap-y-4 w-full max-w-lg mx-auto xl:mx-0"
+            className="flex-1 flex flex-col gap-y-3 sm:gap-y-4 w-full max-w-lg mx-auto xl:mx-0"
           >
-            <div>
-              <label className="text-xs uppercase tracking-wider text-white/70 mb-1.5 block font-medium text-left">
-                Your Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                required
-                placeholder="Enter your name"
-                className="input"
-                disabled={isLoading}
-              />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-1">
+              <div>
+                <label className="text-[11px] sm:text-xs uppercase tracking-wider text-white/70 mb-1 sm:mb-1.5 block font-medium text-left">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Enter your name"
+                  className="input h-11 sm:h-13 pl-4 sm:pl-6 text-sm sm:text-base"
+                  disabled={isLoading}
+                />
+              </div>
+
+              <div>
+                <label className="text-[11px] sm:text-xs uppercase tracking-wider text-white/70 mb-1 sm:mb-1.5 block font-medium text-left">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                  className="input h-11 sm:h-13 pl-4 sm:pl-6 text-sm sm:text-base"
+                  disabled={isLoading}
+                />
+              </div>
             </div>
 
             <div>
-              <label className="text-xs uppercase tracking-wider text-white/70 mb-1.5 block font-medium text-left">
-                Your Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Enter your email"
-                className="input"
-                disabled={isLoading}
-              />
-            </div>
-
-            <div>
-              <label className="text-xs uppercase tracking-wider text-white/70 mb-1.5 block font-medium text-left">
+              <label className="text-[11px] sm:text-xs uppercase tracking-wider text-white/70 mb-1 sm:mb-1.5 block font-medium text-left">
                 Write your message here
               </label>
               <textarea
                 name="message"
                 required
-                rows={6}
+                rows={4}
                 placeholder="Enter your message"
-                className="textarea"
+                className="textarea min-h-24 sm:min-h-32 p-3.5 sm:p-6 text-sm sm:text-base"
                 disabled={isLoading}
               />
             </div>
 
-            <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
+            <div className="pt-1 sm:pt-2 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
               <button
                 type="submit"
                 disabled={isLoading}
-                className="btn rounded-full border border-white/50 w-full sm:w-auto px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent hover:bg-accent text-white group disabled:opacity-60 disabled:cursor-not-allowed shadow-lg cursor-pointer"
+                className="btn rounded-full border border-white/50 w-full sm:w-auto h-11 sm:h-13 px-6 sm:px-8 transition-all duration-300 flex items-center justify-center gap-x-3 overflow-hidden text-white group disabled:opacity-60 disabled:cursor-not-allowed shadow-lg cursor-pointer"
               >
-                <span className="text-sm font-semibold tracking-wide">
+                <span className="text-xs sm:text-sm font-semibold tracking-wide">
                   {isLoading ? "Sending..." : "Submit now"}
                 </span>
                 {!isLoading && (
-                  <BsArrowRight className="ml-2 text-lg group-hover:translate-x-1 transition-transform" />
+                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/10 group-hover:bg-[#FFFFFF] flex items-center justify-center text-white group-hover:text-primary transition-all duration-300 shadow-sm">
+                    <BsArrowRight className="text-xs sm:text-sm transition-transform duration-300 group-hover:-rotate-45" />
+                  </span>
                 )}
               </button>
 

@@ -28,7 +28,6 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
 
@@ -147,35 +146,25 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 pt-36 pb-32 xl:pt-44 xl:pb-32 text-center xl:text-left overflow-y-auto">
+    <div className="w-full h-full bg-primary/30 pt-24 pb-24 sm:pt-28 sm:pb-44 xl:pt-44 xl:pb-32 text-center xl:text-left overflow-y-auto overflow-x-hidden relative">
       <Circles />
 
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-92.5"
-      >
-        <Avatar />
-      </motion.div>
-
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
+      <div className="container mx-auto h-auto min-h-full xl:h-full flex flex-col xl:flex-row items-center justify-start xl:justify-center gap-y-8 xl:gap-x-6 w-full px-4 sm:px-6 xl:pl-4 xl:pr-20">
+        <div className="w-full xl:flex-1 flex flex-col items-center xl:items-start justify-start xl:justify-center text-center xl:text-left">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="text-2xl sm:text-3xl md:text-4xl xl:text-[54px] xl:leading-[1.3] font-bold xl:font-semibold leading-tight mb-3 sm:mb-4 xl:mb-4 text-center xl:text-left mx-auto xl:mx-0 w-full max-w-xl xl:max-w-none"
           >
             Engineering scalable <span className="text-accent">MERN applications</span> with clean code.
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
-            className="max-w-125 mx-auto xl:mx-0 mb-4 xl:mb-6 px-2 xl:px-0 text-white/80 text-sm xl:text-base leading-relaxed"
+            className="w-full max-w-xl xl:max-w-125 mx-auto xl:mx-0 mb-4 sm:mb-6 xl:mb-6 px-1 xl:px-0 text-white/80 text-xs sm:text-sm xl:text-base leading-relaxed text-center xl:text-left"
           >
             B.Tech in Computer Science & Engineering graduate from Uttaranchal
             Institute of Technology (8.1 CGPA). Full-Stack MERN Developer based in
@@ -184,10 +173,10 @@ const About = () => {
           </motion.p>
 
           <motion.div
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
-            className="mb-6 xl:mb-8"
+            className="flex justify-center xl:justify-start mb-6 xl:mb-8 w-full xl:w-auto"
           >
             <a
               href="/resume.pdf"
@@ -202,44 +191,44 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn("down", 0.5)}
             initial="hidden"
             animate="show"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="flex justify-center xl:justify-start w-full max-w-lg sm:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-6 sm:mb-8 xl:mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
-              <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+            <div className="grid grid-cols-2 sm:flex sm:flex-1 gap-3 sm:gap-0 xl:gap-x-6 w-full">
+              <div className="relative flex-1 sm:after:w-px sm:after:h-full sm:after:bg-white/10 sm:after:absolute sm:after:top-0 sm:after:right-0 bg-white/5 sm:bg-transparent p-3 sm:p-0 rounded-xl sm:rounded-none text-center xl:text-left">
+                <div className="text-xl sm:text-2xl xl:text-4xl font-extrabold text-accent mb-1 sm:mb-2 xl:mb-2">
                   <CountUp start={0} end={2} duration={4} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
+                <div className="text-[10px] sm:text-xs uppercase tracking-[1px] leading-[1.3] xl:leading-[1.4] max-w-28 sm:max-w-25 mx-auto xl:mx-0">
                   Years of experience.
                 </div>
               </div>
 
-              <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+              <div className="relative flex-1 sm:after:w-px sm:after:h-full sm:after:bg-white/10 sm:after:absolute sm:after:top-0 sm:after:right-0 bg-white/5 sm:bg-transparent p-3 sm:p-0 rounded-xl sm:rounded-none text-center xl:text-left">
+                <div className="text-xl sm:text-2xl xl:text-4xl font-extrabold text-accent mb-1 sm:mb-2 xl:mb-2">
                   <CountUp start={0} end={6} duration={4} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
+                <div className="text-[10px] sm:text-xs uppercase tracking-[1px] leading-[1.3] xl:leading-[1.4] max-w-28 sm:max-w-25 mx-auto xl:mx-0">
                   Finished projects.
                 </div>
               </div>
 
-              <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+              <div className="relative flex-1 sm:after:w-px sm:after:h-full sm:after:bg-white/10 sm:after:absolute sm:after:top-0 sm:after:right-0 bg-white/5 sm:bg-transparent p-3 sm:p-0 rounded-xl sm:rounded-none text-center xl:text-left">
+                <div className="text-xl sm:text-2xl xl:text-4xl font-extrabold text-accent mb-1 sm:mb-2 xl:mb-2">
                   <CountUp start={0} end={8.1} decimals={1} duration={4} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
+                <div className="text-[10px] sm:text-xs uppercase tracking-[1px] leading-[1.3] xl:leading-[1.4] max-w-28 sm:max-w-25 mx-auto xl:mx-0">
                   B.Tech CGPA (out of 10).
                 </div>
               </div>
 
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+              <div className="relative flex-1 bg-white/5 sm:bg-transparent p-3 sm:p-0 rounded-xl sm:rounded-none text-center xl:text-left">
+                <div className="text-xl sm:text-2xl xl:text-4xl font-extrabold text-accent mb-1 sm:mb-2 xl:mb-2">
                   <CountUp start={0} end={2} duration={3} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
+                <div className="text-[10px] sm:text-xs uppercase tracking-[1px] leading-[1.3] xl:leading-[1.4] max-w-28 sm:max-w-25 mx-auto xl:mx-0">
                   Industry certificates.
                 </div>
               </div>
@@ -248,13 +237,13 @@ const About = () => {
         </div>
 
         <motion.div
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn("down", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] min-h-100"
+          className="flex flex-col w-full xl:max-w-[48%] min-h-60 xl:min-h-100 pb-4 xl:pb-0 items-center xl:items-start text-center xl:text-left justify-start xl:justify-center"
         >
-          <div className="flex gap-x-4 xl:gap-x-6 mx-auto xl:mx-0 mb-6 flex-wrap justify-center xl:justify-start gap-y-2">
+          <div className="flex gap-x-3 sm:gap-x-4 xl:gap-x-6 mx-auto xl:mx-0 mb-4 sm:mb-6 xl:mb-6 flex-wrap justify-center xl:justify-start gap-y-2 text-xs sm:text-sm xl:text-base w-full xl:w-auto">
             {aboutData.map((item, itemI) => (
               <div
                 key={itemI}
@@ -268,22 +257,22 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-4 flex flex-col gap-y-3 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-4 flex flex-col gap-y-3 xl:gap-y-4 items-center xl:items-start text-center xl:text-left w-full">
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex flex-col md:flex-row max-w-full gap-x-2 items-center xl:items-start text-center xl:text-left text-white/70"
+                className="flex flex-col sm:flex-row flex-wrap max-w-full gap-x-2 items-center xl:items-start text-center xl:text-left text-white/70 justify-center xl:justify-start"
               >
                 <div className="font-normal text-white/90 text-sm md:text-base">{item.title}</div>
                 {item.stage && <div className="hidden md:flex text-white/30">-</div>}
                 {item.stage && (
-                  <div className="text-accent text-xs md:text-sm font-light mt-0.5">
+                  <div className="text-accent text-xs md:text-sm font-light mt-0.5 shrink-0">
                     {item.stage}
                   </div>
                 )}
 
                 {item.icons && (
-                  <div className="flex gap-x-3 mt-1 md:mt-0 flex-wrap justify-center">
+                  <div className="flex gap-x-3 mt-1.5 md:mt-0 flex-wrap justify-center xl:justify-start">
                     {item.icons.map((Icon, iconI) => (
                       <div
                         key={iconI}

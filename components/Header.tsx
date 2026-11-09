@@ -15,7 +15,7 @@ const Header = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"
-              className="w-9 h-9 xl:w-11 xl:h-11 text-accent fill-current transition-transform duration-300 group-hover:rotate-6 shrink-0"
+              className="w-10 h-10 xl:w-12 xl:h-12 text-white fill-current drop-shadow-[0_0_10px_rgba(255,255,255,0.4)] transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(241,48,36,0.8)] shrink-0"
               fillRule="nonzero"
               aria-hidden="true"
             >

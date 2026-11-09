@@ -37,7 +37,7 @@
   "author": {
     "name": "Dishu Kumar",
     "email": "dishusingh05@gmail.com",
-    "url": "https://github.com/Jaarvis05/Jaarvis05"
+    "url": "https://github.com/jaarviskumar05-dev"
   },
   "description": "Dishu Kumar is a Full-Stack MERN Developer based in Gurugram, Haryana.",
   "keywords": [
@@ -60,11 +60,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jaarvis05/Jaarvis05.git"
+    "url": "https://github.com/jaarviskumar05-dev/Dishu-Portfolio.git"
   },
-  "homepage": "https://github.com/Jaarvis05/Jaarvis05#readme",
+  "homepage": "https://github.com/jaarviskumar05-dev/Dishu-Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/Jaarvis05/Jaarvis05/issues",
+    "url": "https://github.com/jaarviskumar05-dev/Dishu-Portfolio/issues",
     "email": "dishusingh05@gmail.com"
   }
 }

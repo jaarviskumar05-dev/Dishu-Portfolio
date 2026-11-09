@@ -147,7 +147,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-y-auto">
+    <div className="h-full bg-primary/30 pt-36 pb-32 xl:pt-44 xl:pb-32 text-center xl:text-left overflow-y-auto">
       <Circles />
 
       <motion.div
@@ -228,7 +228,7 @@ const About = () => {
 
               <div className="relative flex-1 after:w-px after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} decimals={1} duration={4} />.1
+                  <CountUp start={0} end={8.1} decimals={1} duration={4} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-25">
                   B.Tech CGPA (out of 10).
@@ -258,10 +258,9 @@ const About = () => {
             {aboutData.map((item, itemI) => (
               <div
                 key={itemI}
-                className={`${
-                  index === itemI &&
+                className={`${index === itemI &&
                   "text-accent after:w-full after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize text-sm xl:text-base relative after:w-8 after:h-0.5 after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize text-sm xl:text-base relative after:w-8 after:h-0.5 after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemI)}
               >
                 {item.title}

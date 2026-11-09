@@ -16,7 +16,7 @@ export const navData: { name: string; path: string; Icon: IconType }[] = [
   { name: "home", path: "/", Icon: HiHome },
   { name: "about", path: "/about", Icon: HiUser },
   { name: "services", path: "/services", Icon: HiRectangleGroup },
-  { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "projects", path: "/projects", Icon: HiViewColumns },
   {
     name: "testimonials",
     path: "/testimonials",

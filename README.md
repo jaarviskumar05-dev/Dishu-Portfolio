@@ -5,7 +5,7 @@
 A responsive, high-performance developer portfolio built with **Next.js**, **React**, **Tailwind CSS**, and **Framer Motion**, featuring dynamic particle animations, smooth page transitions, and modern UI/UX design.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dishu_Kumar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dishu-singh-6a73b324a)
-[![GitHub](https://img.shields.io/badge/GitHub-Jaarvis05-181717?style=for-the-badge&logo=github)](https://github.com/Jaarvis05/Jaarvis05)
+[![GitHub](https://img.shields.io/badge/GitHub-jaarviskumar05--dev-181717?style=for-the-badge&logo=github)](https://github.com/jaarviskumar05-dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 ---
@@ -80,7 +80,7 @@ npm -v
 
 ### 2. Clone Repository
 ```bash
-git clone https://github.com/Jaarvis05/Jaarvis05.git
+git clone https://github.com/jaarviskumar05-dev/Dishu-Portfolio.git
 cd modern-portfolio
 ```
 
@@ -111,7 +111,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 - **Phone**: [+91 8586871783](tel:+918586871783)
 - **Email**: [dishusingh05@gmail.com](mailto:dishusingh05@gmail.com)
 - **LinkedIn**: [linkedin.com/in/dishu-singh-6a73b324a](https://www.linkedin.com/in/dishu-singh-6a73b324a)
-- **GitHub**: [github.com/Jaarvis05/Jaarvis05](https://github.com/Jaarvis05/Jaarvis05)
+- **GitHub**: [github.com/jaarviskumar05-dev](https://github.com/jaarviskumar05-dev)
 
 ---
 

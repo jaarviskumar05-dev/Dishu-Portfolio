@@ -7,7 +7,7 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link
         prefetch
-        href="/work"
+        href="/projects"
         className="relative w-46.25 h-46.25 flex justify-center items-center bg-circle-star bg-cover bg-center bg-no-repeat group"
       >
         <Image

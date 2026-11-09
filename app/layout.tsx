@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Dishu Kumar",
-      url: "https://github.com/Jaarvis05/Jaarvis05",
+      url: "https://github.com/jaarviskumar05-dev",
     },
   ],
   icons: {

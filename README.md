@@ -109,7 +109,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 - **Name**: Dishu Kumar
 - **Location**: Sector 4, Gurugram, Haryana (122001)
 - **Phone**: [+91 8586871783](tel:+918586871783)
-- **Email**: [dishusingh05@gmail.com](mailto:dishusingh05@gmail.com)
+- **Email**: [jaarviskumar05@gmail.com](mailto:jaarviskumar05@gmail.com)
 - **LinkedIn**: [linkedin.com/in/dishu-singh-6a73b324a](https://www.linkedin.com/in/dishu-singh-6a73b324a)
 - **GitHub**: [github.com/jaarviskumar05-dev](https://github.com/jaarviskumar05-dev)
 
